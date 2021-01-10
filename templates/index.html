@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PyAnalyzer | Restaurant</title>
+    <!--meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<style>
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+</style>
+
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container">
+        <a class="navbar-brand" href="#">
+            <h3 style="color: #ffc107; font-family: 'Big Shoulders Stencil Text', cursive;">Py <i class="fas fa-chart-line"></i> Analyzer <span style="color: #fff; font-family: 'Ubuntu', sans-serif; font-size: 18px;">| Restaurant</span></h3>
+        </a>
+        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>-->
+        <!--<div class="collapse navbar-collapse" id="navbarNavDropdown">-->
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" style="color: #fff;">Home <span class="sr-only"></span></a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./analysis.html" style="color: #fff;">Analysis</a>
+            </li>
+          </ul>
+        <!--</div>-->
+        </div>
+      </nav>
+
+      <div class="card" style="
+        width: 100%;
+        background-image: radial-gradient(circle, #006fff, #3463ff, #5652ff, #743bff, #9000ff);
+        border: none;
+        border-radius: 0;
+        color: #fff;
+      ">
+        <div class="card-body">
+            <div class="container">
+                <div class="row pt-5">
+                    <img src="../static/Logo.png" class="img-fluid" width="200px">
+                </div>
+                <div class="row">
+                    <h4>| Restaurant</h4>
+                </div>
+                <div class="row py-3">
+                    <div class="col-md-6 text-center">
+                        <h3><b>Welcome to <span style="color: #ffc107;">PyAnalyzer</span> Restaurant</b></h3>
+                        <br/>
+                        <p style="font-size: 18px;">
+                            Where we can easy sentiment analysis our customer reviews.
+                            Which help to inprove our business in a next level
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center pt-2">
+                        <img style="border-radius: 10px;" src="../static/resto.jpg" class="img-fluid" width="600px">
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+      
+      <div class="card" style="border: none; border-radius: 0; background-color: #d7dade;">
+        <div class="card-body py-5">
+          <div class="container">
+            <center><h2>TCS Inframind season 4 | Entreprise AI</h2></center><br>
+            <center><h4>To determine how the customer base feels about certain foods and Reviews</h4></center><br>
+            <div class="row">
+                <div class="col-sm-6 text-center">
+                    <img width="400px" src="{{url_for('static', filename= 'sentiment-analysis-demo.png')}}" class="img-fluid">
+                </div>
+                <div class="col-sm-6 pt-4">
+                    <h3>Objective:</h3><br>
+                    <p>
+                        Enhance the customer satisfaction index and to ensure customer stickness to your organization, thereby
+                        maximizing revenue or optimizing costs. infuse emerging technologies to draw, engage and retain new era
+                        of tech savvy (and demanding) set of customers.
+                    </p>
+                </div>    
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <hr/>
+
+        <div class="card" style="border: none; border-radius: 0;">
+            <div class="card-body">
+            <div class="container">
+                <center><h2><b>IMPLEMENTATION</b></h2></center><br>
+                <center><h3>Data Insights</h3></center><br>
+                <center><h4>Accuracy - 79%</h4></center><br>
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <img width="500px" src="{{url_for('static', filename= 'graph.png')}}" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img width="500px" src="{{url_for('static', filename= 'acc.png')}}" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <hr/>
+    
+    <div class="card" style="border: 0; border-radius: 0; background-color: #d7dade;">
+        <div class="card-body py-5">
+            <div class="container">
+                <center><h2>About Myself</h2></center>
+                <div class="row pt-5">
+                    <div class="col-md-6 text-center">
+                        <img src="{{url_for('static', filename= 'pp.jpg')}}" class="img-fluid" width="300px" style="border: none; border-radius: 150px;">
+                    </div>
+                    <div class="col-md-6 pt-4">
+                            <p>
+                                I am <b>Jaydeep,</b> from Murshidabad College of Engineering and technology. I am student of Computer Science and Engineering, 3rd year
+                            </p>
+                            <p>
+                                for <b>TCS Inframind season 4</b>. So, I make this project I hope eveyone will like this project
+                            </p>
+                            <hr/>
+                            <br/>
+                            <p style="font-size: 22px;" class="text-center">
+                                <b>Follow Me<b>
+                            </p>
+                            <p class="text-center">
+                                <a href="https://github.com/JaydeepDas2000"><i style="font-size: 22px; color: black;" class="fab fa-github"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100024791741238"><i style="font-size: 22px; color: #5652ff; padding-left: 15px;" class="fab fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/in/jaydeep-das-61b5411a6/"><i style="font-size: 22px; color: #3463ff; padding-left: 15px;" class="fab fa-linkedin"></i></a>
+                                <a href="https://www.kaggle.com/jaydeep991"><i style="font-size: 22px; color: #3463ff; padding-left: 15px;" class="fab fa-kaggle"></i></a>
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  
+
+
+</body>
+</html>

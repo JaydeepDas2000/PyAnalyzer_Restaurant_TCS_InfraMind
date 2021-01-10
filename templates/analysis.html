@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PyAnalyzer | Restaurant</title>
+    <!--meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <style>
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+    </style>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container">
+      <a class="navbar-brand" href="./index.html">
+          <h3 style="color: #ffc107; font-family: 'Big Shoulders Stencil Text', cursive;">Py <i class="fas fa-chart-line"></i> Analyzer <span style="color: #fff; font-family: 'Ubuntu', sans-serif; font-size: 18px;">| Restaurant</span></h3>
+      </a>
+      <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>-->
+      <!--<div class="collapse navbar-collapse" id="navbarNavDropdown">-->
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html" style="color: #fff;">Home <span class="sr-only"></span></a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: #fff;">Analysis</a>
+          </li>
+        </ul>
+      <!--</div>-->
+      </div>
+    </nav>
+
+    <div class="card" style="border: none; border-radius: 0;">
+      <div class="card-body">
+        <div class="container-fluid">
+            <center><h2>Analysis</h2></center><br>
+            <div class="row pt-4">
+                <div class="col-md-6">
+                  <div class="card">
+                      <h4 style="color: #ffc107;" class="card-header bg-dark">Sentiment Analayzer</h4>
+                      <div class="card-body">
+                        <form action='/analysis.html' method='POST'>
+                          <div class="form-row">
+                            
+                              <label for="fname">Input Review</label>
+                              <input style="width: 100%; color: blue;" type="text" placeholder="Enter your text" class="form-control" id="fname" name="message" required><br>
+                              <br/>
+                              <button type="submit" class="btn btn-warning"><b>Analyze</b></button>
+                            
+                          </div>
+                      </form>
+                      <hr/>
+                        <p class='bd'>{{ mes }}</p>
+                        <h3 class="text-center">
+                        {{ predictions }}</h3>
+                        {% if predictions %}
+                          <div class="row">
+                            <center>
+                              <img src="{{url_for('static', filename= predictions + '.jpeg')}}" width="100px" class="img-fluid"/> 
+                            </center>    
+                          </div>
+                          <div class="row">
+                            <center>
+                            <h4>The predicted probability is : {{ proba }}</h4>
+                            </center>
+                          </div>
+                        {% endif %}
+                      </div>
+                  </div>
+              </div>
+                <div class="col-md-6 p-5 text-center">
+                    <img width="400px" class="img-fluid" src="{{url_for('static', filename= 'undraw_speed_test_wxl0.svg')}}" alt="">
+                </div>
+                
+            </div>
+        </div>
+      </div>
+    </div>
+
+    </body>
+
+</html>
