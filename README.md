@@ -1,6 +1,6 @@
 # PyAnalyzer_Restaurant_TCS_InfraMind
 Sentiment Analysis for Restaurant review system
-YOUTUBE LINK - https://youtu.be/TuV4TRK1Aps
+|| YOUTUBE LINK - https://youtu.be/TuV4TRK1Aps
 
 first, you have to create an env. where you store all the python modules which need to run the project
 
