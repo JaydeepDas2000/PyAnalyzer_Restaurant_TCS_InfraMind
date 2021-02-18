@@ -22,3 +22,19 @@ first, you have to create an env. where you store all the python modules which n
  - `source env/bin/activate`
  - then install flask and other modules `pip3 install [module_name]`
  - then run the program `python3 app.py`
+
+-----------------------xxx------------------------
+
+## Hardware Used :
+ - Intel Core i3 processor
+ - 4GB ram
+ - Intel integrated hd graphics 5500
+## Software Used :
+ - VS Code (as IDE)
+ - Google Colab (as IDE)
+## Technology Used : 
+ - Python (as language)
+ - Flask (as framework)
+ - HTML/CSS (as language)
+
+After deploying the project in sever. It will run in all the devices whether mobile, tablet or PC but if you run this prototype then you have to run in PC (PYTHON must be installed) because It is an web-base application
