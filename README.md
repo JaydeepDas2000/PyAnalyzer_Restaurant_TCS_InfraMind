@@ -39,4 +39,4 @@ first, you have to create an env. where you store all the python modules which n
  - Flask (as framework)
  - HTML/CSS (as language)
 
-After deploying the project in sever. It will run in all the devices whether mobile, tablet or PC but if you run this prototype then you have to run in PC (PYTHON must be installed) because It is an web-base application
+After deploying the project in server. It will run in all the devices whether mobile, tablet or PC but if you run this prototype then you have to run in PC (PYTHON must be installed) because It is an web-base application
