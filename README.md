@@ -2,6 +2,8 @@
 Sentiment Analysis for Restaurant review system
 || YOUTUBE LINK - https://youtu.be/TuV4TRK1Aps
 
+This is my personal website - https://jaydeepdas2000.github.io/JaydeepWeb/jaydeep_das.html
+
 first, you have to create an env. where you store all the python modules which need to run the project
 
 ### for Windows
